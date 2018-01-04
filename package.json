@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "lodash": "^4.17.4",
     "vue": "^2.5.2"
   },
   "devDependencies": {
@@ -39,7 +40,7 @@
     "rimraf": "^2.6.0",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
-    "udn-newmedia-vue-components": "^1.0.10",
+    "udn-newmedia-vue-components": "^1.1.1",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",
