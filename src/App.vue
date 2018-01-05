@@ -1584,6 +1584,11 @@ svg{
   background-color: #EF4326;
 }
 
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
   #report p{
     font-size: 17px;
@@ -1592,10 +1597,7 @@ svg{
     padding: 30px 100px;
     font-size: 20px;
   }
-  body{
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
+  
   #svg-contain{
     top: 13%;
     left: 50%;

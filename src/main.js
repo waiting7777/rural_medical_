@@ -20,7 +20,7 @@ $(document).ready(function(){
   var w = $(window).width()
 	var h = $(window).height()
 
-  if(w > 1024){
+  if(w >= 1024){
     var draw = bodymovin.loadAnimation({
       container: document.getElementById('draw-1'),
       renderer: 'svg',
@@ -28,6 +28,11 @@ $(document).ready(function(){
       autoplay: false,
       path: './static/web/data.json'
     })
+
+    var move = (w - 880 - 30) / 2
+
+    $('.textbox').css('right', move + 'px')
+    $('#svg-contain').css('left', move + 'px')
   }
   else{
     var draw = bodymovin.loadAnimation({
